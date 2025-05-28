@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ayden Stoll's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Contact Me</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+		<li><a href="certifications.html">Certifications</a></li>	
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+	
+	<button id="theme-toggle">Dark Mode</button>
+
+  </header>
+
+<main>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:your.email@example.com">aydenstoll@outlook.com</a></p>
+    <p>GitHub: <a href="https://github.com/aydenstoll23" target="_blank">github.com/aydenstoll23</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/ayden-stoll-291a12268/" target="_blank">https://www.linkedin.com/in/ayden-stoll-291a12268/</a></p>
+  </section>
+
+</main>
+
+  <footer>
+    <p>2025 Ayden Stoll</p>
+	<a href="resume.pdf" download class="download-btn">Download Resume (PDF)</a>
+  </footer>
+  
+  <script>
+  const toggleBtn = document.getElementById('theme-toggle');
+
+  toggleBtn.addEventListener('click', () => {
+    document.body.classList.toggle('dark-theme');
+
+    // Save preference in localStorage
+    if (document.body.classList.contains('dark-theme')) {
+      localStorage.setItem('theme', 'dark');
+    } else {
+      localStorage.setItem('theme', 'light');
+    }
+  });
+
+  // Apply saved theme on page load
+  window.addEventListener('DOMContentLoaded', () => {
+    if (localStorage.getItem('theme') === 'dark') {
+      document.body.classList.add('dark-theme');
+    }
+  });
+</script>  
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('section').forEach(section => {
+      section.classList.add('visible');
+    });
+  });
+</script>
+
+</body>
+</html>

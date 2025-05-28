@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ayden Stoll's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>My Projects</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+		<li><a href="certifications.html">Certifications</a></li>	
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+	
+	<button id="theme-toggle">Dark Mode</button>
+
+  </header>
+
+<main>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Calendar Extension</h3>
+      <p>A lightweight Chrome extension that displays a popup calendar, allowing users to easily add and delete notes for any day of the month. Notes are saved using local storage, and dates with notes are visually marked for quick reference.</p>
+	  <a href="https://chromewebstore.google.com/detail/calendar-extension/fgmjhlindafblejknbabgblcaojhbbng?utm_source=item-share-cb" target="_blank">View on Google Web Store</a>  <br>
+      <a href="https://github.com/AydenStoll23/calendar-extension" target="_blank">View on GitHub</a>
+
+    </div>
+    <div class="project">
+      <h3>To Do List Extension</h3>
+      <p>A simple and efficient Chrome extension that provides a popup to-do list with support for notes and subnotes. Users can easily add, edit, and organize tasks, and attach detailed notes to each item directly within their browser. Includes optional dark mode and data persistence via local storage.</p>
+	  <a href="https://chromewebstore.google.com/detail/to-do-list-with-notes/becklogmhnafelfpjgicihipboonlhom?authuser=3&hl=en" target="_blank">View on Google Web Store</a>  <br>
+      <a href="https://github.com/AydenStoll23/todo-list-extension" target="_blank">View on GitHub</a>
+    </div>
+  </section>
+
+</main>
+
+  <footer>
+    <p>2025 Ayden Stoll</p>
+	<a href="resume.pdf" download class="download-btn">Download Resume (PDF)</a>
+  </footer>
+  
+    <script>
+  const toggleBtn = document.getElementById('theme-toggle');
+
+  toggleBtn.addEventListener('click', () => {
+    document.body.classList.toggle('dark-theme');
+
+    // Save preference in localStorage
+    if (document.body.classList.contains('dark-theme')) {
+      localStorage.setItem('theme', 'dark');
+    } else {
+      localStorage.setItem('theme', 'light');
+    }
+  });
+
+  // Apply saved theme on page load
+  window.addEventListener('DOMContentLoaded', () => {
+    if (localStorage.getItem('theme') === 'dark') {
+      document.body.classList.add('dark-theme');
+    }
+  });
+</script>
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('section').forEach(section => {
+      section.classList.add('visible');
+    });
+  });
+</script>
+
+</body>
+</html>

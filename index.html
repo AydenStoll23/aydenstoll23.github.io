@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayden Stoll's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+		<li><a href="certifications.html">Certifications</a></li>	
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+	
+	<button id="theme-toggle">Dark Mode</button>
+
+  </header>
+
+<main>
+
+<section id="about">
+  <h2>Hi, I’m Ayden</h2>
+<p>I’m an aspiring front-end web developer with a passion for creating websites. I have a strong foundation in HTML, CSS, and JavaScript, and I’m eager to build clean, beautiful websites.</p>
+
+<p>While my primary goal is front-end development, I also have experience with back-end technologies like PHP and MySQL, which allows me to contribute to full-stack projects when needed. 
+I’ve created several projects, including Chrome extensions, which are available on my GitHub and showcased on this site.
+I’m enthusiastic about expanding my skill set and open to learning any programming languages or technologies your team uses.</p>
+
+<p>Outside of development, I spend a lot of time gaming—something that adds to my passion for web design because of things like user experience, system design, and creative problem-solving. Whether I’m analyzing mechanics or making mods, I'm always thinking about how to make software easier and more fun to use.</p>
+
+<p>I am currently completing my Associate of Applied Science (AAS) in Software Development at St. Clair County Community College in Port Huron, MI. I’m a quick learner, a problem-solver, and I’m eager to grow as a developer while contributing to a collaborative, modern development team.</p>
+
+</section>
+
+
+<section id="skills">
+  <h2>Hard Skills</h2>
+  <ul class="skills-list">
+    <li><i class="devicon-html5-plain colored"></i> HTML5</li>
+    <li><i class="devicon-css3-plain colored"></i> CSS3</li>
+    <li><i class="devicon-javascript-plain colored"></i> JavaScript</li>
+    <li><i class="devicon-php-plain colored"></i> PHP</li>
+    <li><i class="devicon-mysql-plain colored"></i> MySQL</li>
+    <li><i class="devicon-java-plain colored"></i> Java</li>
+    <li><i class="devicon-git-plain colored"></i> Git</li>
+    <li><i class="devicon-github-original"></i> GitHub</li>
+	<li><i class="devicon-csharp-plain"></i> C#</li>
+  </ul>
+</section>
+
+<section id="softskills">
+  <h2>Soft Skills</h2>
+  <ul>
+	<li>Communication - I'm able to effectively communicate with others to find out what they want done</li>
+	<li>Teamwork - I'm able to cooperate and collaborate with developers</li>
+	<li>Problem-solving – I analyze problems thoroughly and find practical solutions efficiently.</li>	
+	<li>Attention to Detail – I’m highly perceptive when it comes to catching bugs and ensuring pixel-perfect design.</li>
+	<li>Critical Thinking – I apply logical analysis to break down problems and develop smart strategies.</li>
+	<li>Patience – I manage my time well, staying calm and focused when debugging or learning complex concepts.</li>
+	<li>Resourcefulness – I’m skilled at independently finding answers by researching documentation and tutorials.</li>
+  </ul>
+</section>
+
+</main>
+
+  <footer>
+    <p>2025 Ayden Stoll</p>
+	<a href="resume.pdf" download class="download-btn">Download Resume (PDF)</a>
+  </footer>
+  
+  <script>
+  const toggleBtn = document.getElementById('theme-toggle');
+
+  toggleBtn.addEventListener('click', () => {
+    document.body.classList.toggle('dark-theme');
+
+    // Save preference in localStorage
+    if (document.body.classList.contains('dark-theme')) {
+      localStorage.setItem('theme', 'dark');
+    } else {
+      localStorage.setItem('theme', 'light');
+    }
+  });
+
+  // Apply saved theme on page load
+  window.addEventListener('DOMContentLoaded', () => {
+    if (localStorage.getItem('theme') === 'dark') {
+      document.body.classList.add('dark-theme');
+    }
+  });
+</script>
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('section').forEach(section => {
+      section.classList.add('visible');
+    });
+  });
+</script>
+
+<script>
+  const header = document.querySelector('header');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      header.classList.add('shrink');
+    } else {
+      header.classList.remove('shrink');
+    }
+  });
+</script>
+
+
+  
+</body>
+</html>

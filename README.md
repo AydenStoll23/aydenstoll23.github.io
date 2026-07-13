@@ -2,7 +2,7 @@
 
 This is my personal portfolio website, built to showcase my web development projects, skills, and experience.
 
-Live Site: https://aydenstoll23.github.io/?v=3
+Live Site: https://aydenstoll23.github.io
 
 ##  Features
 

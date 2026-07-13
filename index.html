@@ -17,7 +17,7 @@
       <ul>
         <li><a href="index.html">About Me</a></li>
         <li><a href="projects.html">Projects</a></li>
-		<li><a href="certifications.html">Certifications</a></li>	
+		<li><a href="certifications.html">Education & Certifications</a></li>	
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
@@ -29,16 +29,16 @@
 <main>
 
 <section id="about">
-  <h2>Hi, I’m Ayden</h2>
-<p>I’m an aspiring front-end web developer with a passion for creating websites. I have a strong foundation in HTML, CSS, and JavaScript, and I’m eager to build clean, beautiful websites.</p>
+  <h2>About Me</h2>
+<p>Hello, my name is Ayden, and I’m an entry-level front-end web developer with a strong background in HTML, CSS, and JavaScript, and I love building clean, visually appealing websites.</p>
 
-<p>While my primary goal is front-end development, I also have experience with back-end technologies like PHP and MySQL, which allows me to contribute to full-stack projects when needed. 
-I’ve created several projects, including Chrome extensions, which are available on my GitHub and showcased on this site.
-I’m enthusiastic about expanding my skill set and open to learning any programming languages or technologies your team uses.</p>
+<p>While my primary goal is front-end development, I also have experience with back-end programming languages like PHP and MySQL, so I can contribute to full-stack projects when needed. 
+I’ve created several projects, such as small Chrome extensions, mods for games, and websites, all of which are available on my GitHub and showcased on this site.
+I love expanding my skill set, and I am open to learning any programming languages or technologies that are required for a project.</p>
 
-<p>Outside of development, I spend a lot of time gaming—something that adds to my passion for web design because of things like user experience, system design, and creative problem-solving. Whether I’m analyzing mechanics or making mods, I'm always thinking about how to make software easier and more fun to use.</p>
+<p>Outside of development, I spend a lot of time gaming, which is something that works well with my passion for web design because of things like user experience, system design, and problem solving.</p>
 
-<p>I am currently completing my Associate of Applied Science (AAS) in Software Development at St. Clair County Community College in Port Huron, MI. I’m a quick learner, a problem-solver, and I’m eager to grow as a developer while contributing to a collaborative, modern development team.</p>
+<p>I recently completed my Associate of Applied Science (AAS) in Software Development at St. Clair County Community College in Port Huron, Michigan. I am eager to begin my career in software development, apply the skills I have learned, and continue growing as a developer. I’m a quick learner and a great problem solver who looks forward to contributing to a development team.</p>
 
 </section>
 
@@ -74,7 +74,7 @@ I’m enthusiastic about expanding my skill set and open to learning any program
 </main>
 
   <footer>
-    <p>2025 Ayden Stoll</p>
+    <p>2026 Ayden Stoll</p>
 	<a href="resume.pdf" download class="download-btn">Download Resume (PDF)</a>
   </footer>
   
@@ -84,7 +84,6 @@ I’m enthusiastic about expanding my skill set and open to learning any program
   toggleBtn.addEventListener('click', () => {
     document.body.classList.toggle('dark-theme');
 
-    // Save preference in localStorage
     if (document.body.classList.contains('dark-theme')) {
       localStorage.setItem('theme', 'dark');
     } else {
@@ -92,7 +91,6 @@ I’m enthusiastic about expanding my skill set and open to learning any program
     }
   });
 
-  // Apply saved theme on page load
   window.addEventListener('DOMContentLoaded', () => {
     if (localStorage.getItem('theme') === 'dark') {
       document.body.classList.add('dark-theme');

@@ -225,3 +225,11 @@ section:hover {
 .download-btn:hover {
   background-color: #555;
 }
+
+.project-tech {
+  font-size: 0.95rem;
+  font-weight: bold;
+  margin-top: -5px;
+  margin-bottom: 12px;
+  opacity: 0.8;
+}

@@ -1,124 +1,162 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ayden Stoll's Portfolio</title>
+  <meta name="description" content="Ayden Stoll — entry-level software developer specializing in front-end web development.">
+  <title>Ayden Stoll | Software Developer</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 </head>
-
 <body>
-
-  <header>
-    <h1>My Portfolio</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">About Me</a></li>
-        <li><a href="projects.html">Projects</a></li>
-		<li><a href="certifications.html">Education & Certifications</a></li>	
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+  <header class="site-header">
+    <nav class="site-nav">
+      <a href="index.html" class="brand">
+			<div class="brand-mark">
+			<img src="images/as-logo.jpeg" alt="AS">
+			</div>
+			<span>Ayden Stoll</span>
+		</a>
+      <div class="nav-links">
+        <a href="index.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="certifications.html">Education</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle color theme">
+        <span class="theme-icon">☾</span>
+        <span class="theme-label">Dark</span>
+      </button>
     </nav>
-	
-	<button id="theme-toggle">Dark Mode</button>
-
   </header>
 
-<main>
+  <main>
+    <section class="hero container reveal visible">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> Entry-Level Software Developer</p>
+        <h1>I build <span>websites</span> and <span>software</span> I'm proud of.</h1>
+        <p class="hero-text">I'm Ayden, a software developer who enjoys building websites and learning how things work behind the scenes. I mainly work with HTML, CSS, JavaScript, and C#, but I've also worked with PHP, MySQL, and Java.</p>
+        <div class="hero-actions">
+          <a href="projects.html" class="btn btn-primary">View My Projects <span>→</span></a>
+          <a href="contact.html" class="btn btn-ghost">Get In Touch</a>
+        </div>
+        <div class="hero-meta">
+          <span>Based in Michigan</span>
+          <span>•</span>
+          <span>Open to opportunities</span>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="code-window">
+          <div class="window-bar"><span></span><span></span><span></span><small>developer.js</small></div>
+          <pre><code><b>const</b> developer = {
+  name: <em>"Ayden Stoll"</em>,
+  focus: <em>"Web Development"</em>,
+  stack: [
+    <em>"HTML"</em>, <em>"CSS"</em>,
+    <em>"JavaScript"</em>, <em>"PHP"</em>
+  ],
+  mindset: <em>"Always learning"</em>
+};</code></pre>
+        </div>
+      </div>
+    </section>
 
-<section id="about">
-  <h2>About Me</h2>
-<p>Hello, my name is Ayden, and I’m an entry-level front-end web developer with a strong background in HTML, CSS, and JavaScript, and I love building clean, visually appealing websites.</p>
+    <section class="section container reveal" id="about">
+      <div class="section-heading">
+        <p class="eyebrow"><span></span> About Me</p>
+        <h2>Who I Am</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-copy">
+          <p>I'm a software developer with a focus on web development. I enjoy building websites, as well as developing other software and game mods.</p>
+          <p>I've worked on a variety of projects, from a website for a local business to Chrome extensions and mods for a game. I enjoy working on things that let me learn something new and improve my skills for the future.</p>
+          <p>I recently completed my Associate of Applied Science in Software Development at St. Clair County Community College. I'm currently looking for an opportunity to start my career in software development, with a particular interest in web development.</p>
+        </div>
+        <div class="about-highlight">
+          <div class="stat"><strong>AAS</strong><span>Software Development</span></div>
+          <div class="stat"><strong>Web</strong><span>Front-end focused</span></div>
+          <div class="stat"><strong>7</strong><span>Programming Languages</span></div>
+        </div>
+      </div>
+    </section>
 
-<p>While my primary goal is front-end development, I also have experience with back-end programming languages like PHP and MySQL, so I can contribute to full-stack projects when needed. 
-I’ve created several projects, such as small Chrome extensions, mods for games, and websites, all of which are available on my GitHub and showcased on this site.
-I love expanding my skill set, and I am open to learning any programming languages or technologies that are required for a project.</p>
+    <section class="section container reveal" id="skills">
+      <div class="section-heading compact">
+        <p class="eyebrow"><span></span> Technical Skills</p>
+        <h2>Tools I work with</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Frontend</h3>
+          <div class="skill-list">
+            <div><i class="devicon-html5-plain"></i><span>HTML5</span></div>
+            <div><i class="devicon-css3-plain"></i><span>CSS3</span></div>
+            <div><i class="devicon-javascript-plain"></i><span>JavaScript</span></div>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Backend & Programming</h3>
+          <div class="skill-list">
+            <div><i class="devicon-php-plain"></i><span>PHP</span></div>
+            <div><i class="devicon-mysql-plain"></i><span>MySQL</span></div>
+            <div><i class="devicon-java-plain"></i><span>Java</span></div>
+            <div><i class="devicon-csharp-plain"></i><span>C#</span></div>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Tools</h3>
+          <div class="skill-list">
+            <div><i class="devicon-git-plain"></i><span>Git</span></div>
+            <div><i class="devicon-github-original"></i><span>GitHub</span></div>
+            <div><i class="devicon-visualstudio-plain"></i><span>Visual Studio</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<p>Outside of development, I spend a lot of time gaming, which is something that works well with my passion for web design because of things like user experience, system design, and problem solving.</p>
+    <section class="section container reveal" id="featured">
+      <div class="section-heading">
+        <p class="eyebrow"><span></span> Featured Work</p>
+        <h2>Websites</h2>
+      </div>
+      <div class="featured-project">
+        <div class="project-visual bosskhaz-visual">
+          <div class="mock-browser">
+            <div class="mock-top"><span></span><span></span><span></span><small>bosskhaz.com</small></div>
+            <div class="mock-content">
+              <div class="mock-brand">
+				<img src="images/bosskhazlogo.png" alt="Bosskhaz" class="mock-logo">
+				<span>BOSSKHAZ</span>
+			  </div>
+              <div class="mock-line wide"></div>
+              <div class="mock-line"></div>
+              <div class="mock-products"><span></span><span></span><span></span></div>
+            </div>
+          </div>
+        </div>
+        <div class="featured-copy">
+          <span class="project-type">Client Website</span>
+          <h3>Bosskhaz.com</h3>
+          <p>An online shopping website created for a local cannabis genetics brand to showcase plant varieties, product information, brand details, and contact information.</p>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive Design</span></div>
+          <a href="projects.html" class="text-link">View project details <span>→</span></a>
+        </div>
+      </div>
+    </section>
 
-<p>I recently completed my Associate of Applied Science (AAS) in Software Development at St. Clair County Community College in Port Huron, Michigan. I am eager to begin my career in software development, apply the skills I have learned, and continue growing as a developer. I’m a quick learner and a great problem solver who looks forward to contributing to a development team.</p>
+  </main>
 
-</section>
-
-
-<section id="skills">
-  <h2>Hard Skills</h2>
-  <ul class="skills-list">
-    <li><i class="devicon-html5-plain colored"></i> HTML5</li>
-    <li><i class="devicon-css3-plain colored"></i> CSS3</li>
-    <li><i class="devicon-javascript-plain colored"></i> JavaScript</li>
-    <li><i class="devicon-php-plain colored"></i> PHP</li>
-    <li><i class="devicon-mysql-plain colored"></i> MySQL</li>
-    <li><i class="devicon-java-plain colored"></i> Java</li>
-    <li><i class="devicon-git-plain colored"></i> Git</li>
-    <li><i class="devicon-github-original"></i> GitHub</li>
-	<li><i class="devicon-csharp-plain"></i> C#</li>
-  </ul>
-</section>
-
-<section id="softskills">
-  <h2>Soft Skills</h2>
-  <ul>
-	<li>Communication - I'm able to effectively communicate with others to find out what they want done</li>
-	<li>Teamwork - I'm able to cooperate and collaborate with developers</li>
-	<li>Problem-solving – I analyze problems thoroughly and find practical solutions efficiently.</li>	
-	<li>Attention to Detail – I’m highly perceptive when it comes to catching bugs and ensuring pixel-perfect design.</li>
-	<li>Critical Thinking – I apply logical analysis to break down problems and develop smart strategies.</li>
-	<li>Patience – I manage my time well, staying calm and focused when debugging or learning complex concepts.</li>
-	<li>Resourcefulness – I’m skilled at independently finding answers by researching documentation and tutorials.</li>
-  </ul>
-</section>
-
-</main>
-
-  <footer>
-    <p>2026 Ayden Stoll</p>
-	<a href="resume.pdf" download class="download-btn">Download Resume (PDF)</a>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <strong>Ayden Stoll</strong>
+        <span>Software Developer</span>
+      </div>
+      <a href="resume.pdf" download class="btn btn-secondary">Download Resume</a>
+    </div>
+    <p class="copyright">© 2026 Ayden Stoll. Built with HTML, CSS & JavaScript.</p>
   </footer>
-  
-  <script>
-  const toggleBtn = document.getElementById('theme-toggle');
-
-  toggleBtn.addEventListener('click', () => {
-    document.body.classList.toggle('dark-theme');
-
-    if (document.body.classList.contains('dark-theme')) {
-      localStorage.setItem('theme', 'dark');
-    } else {
-      localStorage.setItem('theme', 'light');
-    }
-  });
-
-  window.addEventListener('DOMContentLoaded', () => {
-    if (localStorage.getItem('theme') === 'dark') {
-      document.body.classList.add('dark-theme');
-    }
-  });
-</script>
-
-<script>
-  window.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('section').forEach(section => {
-      section.classList.add('visible');
-    });
-  });
-</script>
-
-<script>
-  const header = document.querySelector('header');
-
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-      header.classList.add('shrink');
-    } else {
-      header.classList.remove('shrink');
-    }
-  });
-</script>
-
-
-  
+  <script src="script.js" defer></script>
 </body>
 </html>

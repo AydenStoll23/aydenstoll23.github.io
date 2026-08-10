@@ -1,174 +1,138 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ayden Stoll's Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projects by Ayden Stoll — websites, Chrome extensions, and RimWorld game modifications.">
+  <title>Projects | Ayden Stoll</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <header>
-    <h1>My Projects</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">About Me</a></li>
-        <li><a href="projects.html">Projects</a></li>
-		<li><a href="certifications.html">Education & Certifications</a></li>	
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-	
-	<button id="theme-toggle">Dark Mode</button>
+  <header class="site-header"><nav class="site-nav">
+      <a href="index.html" class="brand">
+			<div class="brand-mark">
+			<img src="images/as-logo.jpeg" alt="AS">
+			</div>
+			<span>Ayden Stoll</span>
+		</a>
+      <div class="nav-links">
+        <a href="index.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="certifications.html">Education</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle color theme">
+        <span class="theme-icon">☾</span>
+        <span class="theme-label">Dark</span>
+      </button>
+    </nav></header>
+  <main>
+    <section class="page-hero container reveal visible">
+      <p class="eyebrow"><span></span> Portfolio</p>
+      <h1>Projects I've built</h1>
+      <p>From client websites to browser extensions and game mods, these are some of the projects I've worked on.</p>
+    </section>
 
-  </header>
+<section class="section container reveal">
+  <div class="section-heading">
+    <p class="eyebrow"><span></span>Projects</p>
+    <h2>Websites</h2><span></span>
+  </div>
 
-<main>
+  <div class="project-grid">
+  <div class="project-card">
 
-  <section id="websites">
-  <h2>Websites</h2>
+  <div class="card-visual bosskhaz-visual">
+    <div class="project-screenshots">
+      <img src="images/bosskhazindex.png" alt="Bosskhaz Index" class="screenshot">
+      <img src="images/bosskhazproduct.png" alt="Bosskhaz Product 1" class="screenshot">
+      <img src="images/bosskhazproduct2.png" alt="Bosskhaz Product 2" class="screenshot">
+    </div>
+  </div>
 
-  <div class="project">
+  <div class="card-body">
+    <span class="project-type">Client Website</span>
     <h3>Bosskhaz.com</h3>
 
-    <p class="project-tech">
-      HTML, CSS, JavaScript, Responsive Web Design
+    <p>
+      An online shopping website created for a local cannabis genetics
+      brand to showcase plant varieties, product information, brand
+      details, and contact information.
     </p>
 
-    <p>An online store created for a local cannabis genetics brand. The site showcases available plant varieties, product information, brand details, and contact information in a clean, easy-to-navigate layout.</p>
+    <div class="tags">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>Responsive Design</span>
+    </div>
 
-    <a href="https://bosskhaz.com" target="_blank">View Live Website</a>
+    <div class="card-links">
+      <a href="https://bosskhaz.com" target="_blank">Visit Website →</a>
+    </div>
+  </div>
+
+</div>
+
+<div class="image-lightbox" id="imageLightbox">
+  <button class="lightbox-close" aria-label="Close">&times;</button>
+  <img id="lightboxImage" src="" alt="">
+</div>
   </div>
 </section>
 
-<section id="projects">
-  <h2>Projects</h2>
+    <section class="section container reveal">
+      <div class="project-section-title"><h2>Chrome Extensions</h2><span></span></div>
+      <div class="project-grid two-col">
+        <article class="project-card">
+          <div class="card-icon">▦</div>
+          <div class="card-body">
+            <span class="project-type">Chrome Extension</span>
+            <h3>Calendar Extension</h3>
+            <p>A lightweight popup calendar that lets users add and delete notes for any day. Notes persist with local storage, and dates containing notes are visually marked.</p>
+            <div class="tags"><span>JavaScript</span><span>Chrome APIs</span><span>Local Storage</span></div>
+            <div class="card-links">
+              <a href="https://chromewebstore.google.com/detail/calendar-extension/fgmjhlindafblejknbabgblcaojhbbng?utm_source=item-share-cb" target="_blank" rel="noopener">Web Store ↗</a>
+              <a href="https://github.com/AydenStoll23/calendar-extension" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="card-icon">✓</div>
+          <div class="card-body">
+            <span class="project-type">Chrome Extension</span>
+            <h3>To-Do List Extension</h3>
+            <p>A task-management extension with notes and subnotes. Users can add, edit, organize, and prioritize tasks while keeping data persistent in local storage.</p>
+            <div class="tags"><span>JavaScript</span><span>Chrome APIs</span><span>Local Storage</span></div>
+            <div class="card-links">
+              <a href="https://chromewebstore.google.com/detail/to-do-list-with-notes/becklogmhnafelfpjgicihipboonlhom?authuser=3&hl=en" target="_blank" rel="noopener">Web Store ↗</a>
+              <a href="https://github.com/AydenStoll23/todo-list-extension" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
 
-  <div class="project">
-    <h3>Calendar Extension</h3>
-
-    <p class="project-tech">
-      HTML, CSS, JavaScript, Chrome Extension APIs, Local Storage
-    </p>
-
-    <p>A lightweight Chrome extension that displays a popup calendar, allowing users to easily add and delete notes for any day of the month. Notes are saved using local storage, and dates with notes are visually marked for quick reference.</p>
-
-    <a href="https://chromewebstore.google.com/detail/calendar-extension/fgmjhlindafblejknbabgblcaojhbbng?utm_source=item-share-cb" target="_blank">View on Google Web Store</a>
-    <br>
-    <a href="https://github.com/AydenStoll23/calendar-extension" target="_blank">View on GitHub</a>
-  </div>
-
-  <div class="project">
-    <h3>To-Do List Extension</h3>
-
-    <p class="project-tech">
-      HTML, CSS, JavaScript, Chrome Extension APIs, Local Storage
-    </p>
-
-    <p>A simple and efficient Chrome extension that provides a popup to-do list with support for notes and subnotes. Users can easily add, edit, and organize tasks, and attach detailed notes to each item directly within their browser. Includes optional dark mode and data persistence via local storage.</p>
-
-    <a href="https://chromewebstore.google.com/detail/to-do-list-with-notes/becklogmhnafelfpjgicihipboonlhom?authuser=3&hl=en" target="_blank">View on Google Web Store</a>
-    <br>
-    <a href="https://github.com/AydenStoll23/todo-list-extension" target="_blank">View on GitHub</a>
-  </div>
-</section>
-
-<section id="mods">
-  <h2>Game Mods</h2>
-
-  <div class="project">
-    <h3>RimWorld - Mission Board</h3>
-
-    <p class="project-tech">
-      C#, XML, Harmony
-    </p>
-
-    <p>A RimWorld mod that adds a buildable Mission Board, allowing players to manually select and activate quests and events instead of waiting for them to occur naturally. It also includes custom textures and a Simplified Chinese translation.</p>
-	
-    <a href="https://github.com/AydenStoll23/RW_MissionBoard" target="_blank">View on GitHub</a>
-	<br>
-	<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3582843514" target="_blank">View on Steam Workshop</a>
-	
-  </div>
-
-  <div class="project">
-    <h3>RimWorld - World Object Mover</h3>
-
-    <p class="project-tech">
-      C#, XML, Harmony
-    </p>
-
-    <p>A RimWorld mod that adds a button to world objects, allowing players to relocate them to a new tile.</p>
-	
-    <a href="https://github.com/AydenStoll23/RW_WorldObjectMover" target="_blank">View on GitHub</a>
-	<br>
-	<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3677756703" target="_blank">View on Steam Workshop</a>
-  </div>
-  
-  <div class="project">
-    <h3>RimWorld - WorldEdit Alphabetical Biome Sort Patch</h3>
-
-    <p class="project-tech">
-      C#, XML, Harmony
-    </p>
-
-    <p>A simple patch for the WorldEdit 2.0 mod that sorts the biome list alphabetically for easier navigation.</p>
-	
-    <a href="https://github.com/AydenStoll23/RW_WorldEdit-Alphabetical-Biome-Sort" target="_blank">View on GitHub</a>
-	<br>
-	<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3481784282" target="_blank">View on Steam Workshop</a>
-  </div>
-  
-  <div class="project">
-    <h3>RimWorld - Copyprint 1.6 Update</h3>
-
-    <p class="project-tech">
-      C#, XML, Harmony
-    </p>
-
-    <p>An updated version of the Copyprint mod for RimWorld 1.6.</p>
-	
-    <a href="https://github.com/AydenStoll23/RW_Copyprint1.6" target="_blank">View on GitHub</a>
-	<br>
-	<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3584651982" target="_blank">View on Steam Workshop</a>
-  </div>
-</section>
-
-</main>
-
-  <footer>
-    <p>2026 Ayden Stoll</p>
-	<a href="resume.pdf" download class="download-btn">Download Resume (PDF)</a>
+    <section class="section container reveal">
+      <div class="project-section-title"><h2>Game Mods</h2><span></span></div>
+      <div class="project-grid two-col">
+        <article class="project-card"><div class="card-icon code-icon">{ }</div><div class="card-body"><span class="project-type">RimWorld Mod</span><h3>Mission Board</h3><p>Adds a buildable Mission Board that lets players manually select and activate quests and events. Includes custom textures and a Simplified Chinese translation.</p><div class="tags"><span>C#</span><span>XML</span><span>Harmony</span></div><div class="card-links"><a href="https://github.com/AydenStoll23/RW_MissionBoard" target="_blank" rel="noopener">GitHub ↗</a><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3582843514" target="_blank" rel="noopener">Steam ↗</a></div></div></article>
+        <article class="project-card"><div class="card-icon">↗</div><div class="card-body"><span class="project-type">RimWorld Mod</span><h3>World Object Mover</h3><p>Adds a button to world objects, allowing players to relocate them to a new tile.</p><div class="tags"><span>C#</span><span>XML</span><span>Harmony</span></div><div class="card-links"><a href="https://github.com/AydenStoll23/RW_WorldObjectMover" target="_blank" rel="noopener">GitHub ↗</a><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3677756703" target="_blank" rel="noopener">Steam ↗</a></div></div></article>
+        <article class="project-card"><div class="card-icon">A-Z</div><div class="card-body"><span class="project-type">RimWorld Patch</span><h3>WorldEdit Alphabetical Biome Sort</h3><p>A simple patch for WorldEdit 2.0 that sorts the biome list alphabetically for easier navigation.</p><div class="tags"><span>C#</span><span>XML</span><span>Harmony</span></div><div class="card-links"><a href="https://github.com/AydenStoll23/RW_WorldEdit-Alphabetical-Biome-Sort" target="_blank" rel="noopener">GitHub ↗</a><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3481784282" target="_blank" rel="noopener">Steam ↗</a></div></div></article>
+        <article class="project-card"><div class="card-icon">1.6</div><div class="card-body"><span class="project-type">RimWorld Update</span><h3>Copyprint 1.6 Update</h3><p>An updated version of the Copyprint mod for RimWorld 1.6.</p><div class="tags"><span>C#</span><span>XML</span><span>Harmony</span></div><div class="card-links"><a href="https://github.com/AydenStoll23/RW_Copyprint1.6" target="_blank" rel="noopener">GitHub ↗</a><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3584651982" target="_blank" rel="noopener">Steam ↗</a></div></div></article>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <strong>Ayden Stoll</strong>
+        <span>Software Developer</span>
+      </div>
+      <a href="resume.pdf" download class="btn btn-secondary">Download Resume</a>
+    </div>
+    <p class="copyright">© 2026 Ayden Stoll. Built with HTML, CSS & JavaScript.</p>
   </footer>
-  
-    <script>
-  const toggleBtn = document.getElementById('theme-toggle');
-
-  toggleBtn.addEventListener('click', () => {
-    document.body.classList.toggle('dark-theme');
-
-    if (document.body.classList.contains('dark-theme')) {
-      localStorage.setItem('theme', 'dark');
-    } else {
-      localStorage.setItem('theme', 'light');
-    }
-  });
-
-  window.addEventListener('DOMContentLoaded', () => {
-    if (localStorage.getItem('theme') === 'dark') {
-      document.body.classList.add('dark-theme');
-    }
-  });
-</script>
-
-<script>
-  window.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('section').forEach(section => {
-      section.classList.add('visible');
-    });
-  });
-</script>
-
+<script src="script.js" defer></script>
 </body>
 </html>

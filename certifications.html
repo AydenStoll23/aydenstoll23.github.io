@@ -1,86 +1,78 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ayden Stoll's Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Education and certifications for Ayden Stoll.">
+  <title>Education | Ayden Stoll</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <header>
-    <h1>Education & Certifications</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">About Me</a></li>
-        <li><a href="projects.html">Projects</a></li>
-		<li><a href="certifications.html">Education & Certifications</a></li>	
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-	
-	<button id="theme-toggle">Dark Mode</button>
+  <header class="site-header"><nav class="site-nav">
+      <a href="index.html" class="brand">
+			<div class="brand-mark">
+			<img src="images/as-logo.jpeg" alt="AS">
+			</div>
+			<span>Ayden Stoll</span>
+		</a>
+      <div class="nav-links">
+        <a href="index.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="certifications.html">Education</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle color theme">
+        <span class="theme-icon">☾</span>
+        <span class="theme-label">Dark</span>
+      </button>
+    </nav></header>
+  <main>
+    <section class="page-hero container reveal visible">
+      <p class="eyebrow"><span></span> Background</p>
+      <h1>Education & certifications.</h1>
+      <p>The education and credentials supporting my development work.</p>
+    </section>
 
-  </header>
+    <section class="section container reveal">
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">May 2026</div>
+          <div class="timeline-content">
+            <span class="project-type">Education</span>
+            <h2>Associate of Applied Science in Software Development</h2>
+            <p class="institution">St. Clair County Community College · Port Huron, Michigan</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<main>
-
-<section id="education">
-  <h2>Education</h2>
-
-  <div class="credential">
-    <h3>Associate of Applied Science in Software Development</h3>
-    <p>St. Clair County Community College, Port Huron, Michigan</p>
-    <p>Completed 2026</p>
-  </div>
-</section>
-
-<section id="certifications">
-  <h2>Certifications</h2>
-  <ul>
-    <li>
-      <strong>HTML Developer Certification</strong> – W3Schools (2023)  
-      <a href="Certifications/HTML_Certification.pdf" target="_blank">View Certificate</a>
-    </li>
-  </ul>
-</section>
-
-
-</main>
-
-  <footer>
-    <p>2026 Ayden Stoll</p>
-	<a href="resume.pdf" download class="download-btn">Download Resume (PDF)</a>
-	</footer>
-  
-  <script>
-  const toggleBtn = document.getElementById('theme-toggle');
-
-  toggleBtn.addEventListener('click', () => {
-    document.body.classList.toggle('dark-theme');
-
-    if (document.body.classList.contains('dark-theme')) {
-      localStorage.setItem('theme', 'dark');
-    } else {
-      localStorage.setItem('theme', 'light');
-    }
-  });
-
-  window.addEventListener('DOMContentLoaded', () => {
-    if (localStorage.getItem('theme') === 'dark') {
-      document.body.classList.add('dark-theme');
-    }
-  });
-</script>  
-
-<script>
-  window.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('section').forEach(section => {
-      section.classList.add('visible');
-    });
-  });
-</script>
-
+    <section class="section container reveal">
+      <div class="section-heading compact">
+        <p class="eyebrow"><span></span> Certifications</p>
+        <h2>Professional credentials.</h2>
+      </div>
+      <div class="credential-card">
+        <div class="credential-icon">HTML</div>
+        <div>
+          <span class="project-type">W3Schools · 2023</span>
+          <h3>HTML Developer Certification</h3>
+          <p>Certification demonstrating foundational HTML development knowledge.</p>
+        </div>
+        <a href="Certifications/HTML_Certification.pdf" target="_blank" rel="noopener" class="btn btn-secondary">View Certificate ↗</a>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <strong>Ayden Stoll</strong>
+        <span>Software Developer</span>
+      </div>
+      <a href="resume.pdf" download class="btn btn-secondary">Download Resume</a>
+    </div>
+    <p class="copyright">© 2026 Ayden Stoll. Built with HTML, CSS & JavaScript.</p>
+  </footer>
+  <script src="script.js" defer></script>
 </body>
 </html>

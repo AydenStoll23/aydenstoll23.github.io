@@ -1,6 +1,6 @@
 # Ayden Stoll – Portfolio Website
 
-This is my personal portfolio website, built to showcase my web development projects, skills, and experience.
+This is my personal portfolio website, built to showcase my IT support, technical troubleshooting, and software development skills and projects.
 
 Live Site: https://aydenstoll23.github.io
 
@@ -8,7 +8,8 @@ Live Site: https://aydenstoll23.github.io
 
 - Light/dark mode toggle
 - Project showcase
-- Downloadable resume
+- IT support and hands-on technical experience sections
+- Downloadable IT support resume
 - Smooth scrolling and section animations
 
 ## Built With
@@ -21,4 +22,3 @@ Live Site: https://aydenstoll23.github.io
 ## License
 
 This project is open for reference or educational use.
-
